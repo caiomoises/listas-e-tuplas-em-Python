@@ -3,6 +3,25 @@
 lista = [12, 10, 7, 5]
 lista_animal = ['cachorro', 'gato', 'elefante', 'lobo', 'arara']
 
+#TUPLA(NÃO PODE SER ALTERADA)
+tupla = (1, 10, 12, 14) #A TUPLA É USADA ENTRE PARENTESES 
+print(tupla)
+print(len(tupla)) #A FUNÇÃO LEN REVELA A QUANTIDADE DE ELEMENTOS NA LISTA OU NA TUPLA
+print(len(lista_animal))
+
+#CONVERTENDO UMA LISTA PARA TUPLA 
+tupla_animal = tuple(lista_animal)
+print(tupla_animal)
+
+#CONVERTENDO A TUPLA EM LISTA 
+lista_num = list(tupla) #APOS CONVERTER A TUPLA PARA LISTA, PODE SER FEITO ALTERAÇÕES 
+lista_num[0] = 100
+print(lista_num)
+
+#ALTERANDO NOMES NA LISTA
+lista_animal[0] = 'macaco'
+print(lista_animal)
+
 #PERCORRENDO A LISTA COM LAÇO DE REPETIÇÃO
 for x in lista_animal:
     print(x)
@@ -50,3 +69,6 @@ if c == 'sim':
     d = int(input('Qual o indice do nome que será removido? '))
     lista_animal.pop(d)
     print(lista_animal)
+
+#print(lista_animal[1])
+#print(type(lista_animal))
