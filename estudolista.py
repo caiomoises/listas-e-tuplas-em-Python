@@ -2,6 +2,8 @@
 #OS INDICES DA LISTA COMEÇAM EM 0!
 lista = [12, 10, 7, 5]
 lista_animal = ['cachorro', 'gato', 'elefante', 'lobo', 'arara']
+print(lista_animal)
+print(type(lista_animal))
 
 #TUPLA(NÃO PODE SER ALTERADA)
 tupla = (1, 10, 12, 14) #A TUPLA É USADA ENTRE PARENTESES 
@@ -69,6 +71,5 @@ if c == 'sim':
     d = int(input('Qual o indice do nome que será removido? '))
     lista_animal.pop(d)
     print(lista_animal)
-
-#print(lista_animal[1])
-#print(type(lista_animal))
+else:
+    print('Ok, obrigado!')
